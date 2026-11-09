@@ -34,6 +34,23 @@ public class ActividadEventos {
         botonMover.setBounds(370, 150, 100, 90);
         campoResultado.setEditable(false);
 
+        Label etiquetaContador = new Label("Pulsaciones:");
+        TextField campoContador = new TextField("0");
+        Button botonContador = new Button("Contar");
+
+        etiquetaContador.setBounds(40, 200, 80, 25);
+        campoContador.setBounds(125, 200, 70, 25);
+        campoContador.setEditable(false);
+        botonContador.setBounds(210, 200, 100, 25);
+
+        container.add(etiquetaContador);
+        container.add(campoContador);
+        container.add(botonContador);
+
+        botonContador.addActionListener(
+                new ManejadorContador(campoContador)
+        );
+
         // Añadir los componentes al contenedor
         container.add(botonMover);
         container.add(calcularRaiz);
