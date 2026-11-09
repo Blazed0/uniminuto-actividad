@@ -28,12 +28,11 @@ public class ActividadEventos {
         // Configuraciones
         etiquetaNumero.setBounds(40, 110, 65, 25);
         campoNumero.setBounds(110, 110, 120, 25);
-        botonMover.setBounds( 245,150,100,90);
         calcularRaiz.setBounds(245, 110, 110, 25);
-        etiquetaResultado.setBounds(40, 150, 120, 25);
-        campoResultado.setBounds(110,150, 150, 25);
+        etiquetaResultado.setBounds(40, 150, 70, 25);
+        campoResultado.setBounds(120, 150, 120, 25);
+        botonMover.setBounds(370, 150, 100, 90);
         campoResultado.setEditable(false);
-        container.add(campoResultado);
 
         // Añadir los componentes al contenedor
         container.add(botonMover);
